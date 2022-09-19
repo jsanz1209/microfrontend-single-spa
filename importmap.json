@@ -1,0 +1,10 @@
+{
+    "imports": {
+      "react": "https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.production.min.js",
+       "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js",
+      "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+      "@jsanz1209/root-config": "demo-single-spa-config-jsanz1209.s3.us-east-1.amazonaws.com/jsanz1209-root-config.js",
+      "@jsanz1209/mf-product": "demo-single-spa-app1-jsanz1209.s3.us-east-1.amazonaws.com/team-product-mf-product.js",
+      "@jsanz1209/mf-header": "demo-single-spa-app2-jsanz1209.s3.us-east-1.amazonaws.com/main.js"
+    }
+  }
