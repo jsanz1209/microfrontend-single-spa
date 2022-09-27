@@ -17,6 +17,7 @@ jobs:
 
     steps: 
       - uses: actions/checkout@v2
+      - run: npm run prepare
       - run: npm install
       - run: npm run build:webpack
         env: 
@@ -31,7 +32,7 @@ jobs:
       
       - uses: jsanz1209/aws-cli@1.0.0
         with: 
-          args: cloudfront create-invalidation --distribution-id ${{ secrets.AWS_DISTRIBUTION_ID }} --paths "./index.html"
+          args: cloudfront create-invalidation --distribution-id ${{ secrets.AWS_DISTRIBUTION_ID }} --paths "*/index.html"
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
