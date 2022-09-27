@@ -5,7 +5,7 @@ import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
   {
-  path: 'index',
+  path: 'app1',
   component: TestComponent,
 },
 {
@@ -15,7 +15,7 @@ const routes: Routes = [
 },
 {
   path: '**',
-  redirectTo: 'index'
+  redirectTo: 'app1'
 }];
 
 @NgModule({

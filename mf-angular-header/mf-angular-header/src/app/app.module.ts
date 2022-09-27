@@ -15,7 +15,7 @@ import { TestComponent } from './test/test.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [{provide: APP_BASE_HREF, useValue: '/app1'}],
+  // providers: [{provide: APP_BASE_HREF, useValue: '/app1'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
