@@ -24,7 +24,7 @@ jobs:
 
       - uses: jsanz1209/aws-cli@1.0.0
         with: 
-          args: s3 sync mf-angular-header/mf-angular-header/dist s3://${{ secrets.AWS_S3_BUCKET_NAME_ANGULAR }}/app1
+          args: s3 sync mf-angular-header/mf-angular-header/dist/mf-angular-header s3://${{ secrets.AWS_S3_BUCKET_NAME_ANGULAR }}/app1
         env: 
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
