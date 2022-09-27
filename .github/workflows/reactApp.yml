@@ -17,8 +17,7 @@ jobs:
 
     steps: 
       - uses: actions/checkout@v2
-      - run: npm run prepare
-      - run: npm install
+      - run: npm install --force
       - run: npm run build:webpack
         env: 
           PRODUCTION_DOMAIN: ${{ secrets.PRODUCTION_DOMAIN }}
